@@ -1,0 +1,10 @@
+/build/
+/tmp/
+/meson-logs/
+/caps/
+/log.txt
+/tmp_raw_log
+/builder.log.*
+/ta.*
+/meta_data.json
+/html/

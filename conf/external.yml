@@ -1,0 +1,23 @@
+# Verification suite for tsf-printing: local checkouts, and a snapshot
+# of the tsf-printing working tree.
+repositories:
+  - name: tsf_devtool
+    url: https://github.com/interpretica-io/tsf-devtool.git
+    ref: main
+    libs:
+      - tapi_devtool
+  - name: tsf_kernel
+    url: https://github.com/interpretica-io/tsf-kernel.git
+    ref: main
+    libs:
+      - tapi_kernel
+  - name: tsf_cybersec
+    url: https://github.com/interpretica-io/tsf-cybersec.git
+    ref: main
+    libs:
+      - tapi_cybersec
+  - name: tsf_printing
+    url: https://github.com/interpretica-io/tsf-printing.git
+    ref: main
+    libs:
+      - tapi_print

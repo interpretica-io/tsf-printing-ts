@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<package version="1.0">
+    <description>Security libraries demonstration suite</description>
+
+    <!-- @page cybersec-ts Security Libraries Suite
+          @objective Exercise the tsf-* security libraries against the agent
+                     the suite runs on.
+
+          @par Test Groups:
+          - @ref cybersec-devtool - Building things on an agent (tsf-devtool)
+          - @ref cybersec-kernel - The kernel of an agent (tsf-kernel)
+          - @ref cybersec-cybersec - Security scanners (tsf-cybersec)
+          - @ref cybersec-fuzz - Fuzzing (tsf-fuzz)
+          - @ref cybersec-tls - TLS, from both sides (tsf-tls)
+          - @ref cybersec-container - Containers, and what they got (tsf-container)
+          - @ref cybersec-http - HTTP, and what it answers with (tsf-http)
+
+          @par Notes:
+          - Every test plants what it is about to look for, so the
+            assertion is that a scanner reports the planted defect. A
+            scanner that reports nothing is the failure.
+          - On the localhost configuration the device under test is the
+            build container. Name a host in conf/rcf.conf and the same
+            tests look at that host instead.
+    -->
+
+    <author mailto="maxim.menshikov@interpretica.io" />
+
+    <session track_conf="silent">
+        <!-- @page cybersec-ts-prologue Test Suite Prologue
+              @objective Prepare the test environment.
+
+              @par Scenario:
+              -# Nothing to do: each test opens its own session to the agent.
+        -->
+        <prologue>
+            <script name="prologue">
+                <objective>
+                    Prepare the test environment.
+                    @md
+                </objective>
+            </script>
+        </prologue>
+
+        <!-- @page cybersec-ts-epilogue Test Suite Epilogue
+              @objective Finalize the test environment.
+        -->
+        <epilogue>
+            <script name="epilogue">
+                <objective>
+                    Finalize the test environment.
+                    @md
+                </objective>
+            </script>
+        </epilogue>
+
+        <run>
+            <package name="print" />
+        </run>
+    </session>
+</package>

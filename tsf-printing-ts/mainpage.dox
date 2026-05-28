@@ -1,0 +1,21 @@
+/** @mainpage
+
+This suite exercises the tsf-* security libraries against the Test Agent
+it runs on:
+
+- @ref cybersec-devtool - compilers and make on an agent (tsf-devtool);
+- @ref cybersec-kernel - kernel interfaces, modules and hardening
+  posture (tsf-kernel);
+- @ref cybersec-cybersec - binary hardening, banned calls and network
+  exposure (tsf-cybersec);
+- @ref cybersec-fuzz - a fuzzing campaign end to end (tsf-fuzz);
+- @ref cybersec-tls - what an endpoint agrees to and whether a client
+  checks (tsf-tls).
+
+Every test plants what it is about to look for. The assertion is that
+the scanner reports the planted defect, so a scanner that reports
+nothing is the failure - which is the opposite of how a suite against a
+real product reads, and the right way round for a suite whose subject is
+the scanners themselves.
+
+*/

@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<package version="1.0">
+    <description>Printing</description>
+    <author mailto="maxim.menshikov@interpretica.io" />
+    <session track_conf="silent">
+        <prologue>
+            <script name="prologue"><objective>Prepare the print group.</objective></script>
+        </prologue>
+        <epilogue>
+            <script name="epilogue"><objective>Finalize the print group.</objective></script>
+        </epilogue>
+        <run><script name="detect"><objective>Which print system the agent has.</objective></script></run>
+        <run><script name="ipp"><objective>IPP straight to a printer.</objective></script></run>
+        <run><script name="cups_queue"><objective>A CUPS queue from start to end.</objective></script></run>
+        <run><script name="cups_jobs"><objective>Jobs through a CUPS queue.</objective></script></run>
+        <run><script name="audit"><objective>The posture of a print system.</objective></script></run>
+    </session>
+</package>

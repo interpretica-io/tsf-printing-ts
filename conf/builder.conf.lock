@@ -1,0 +1,7 @@
+# External repositories pinned by the Test Environment Builder.
+# Commit this file: it makes the build reproducible.
+# Run dispatcher.sh --update-external to move the records on.
+tsf_cybersec /home/user/src/midair-platform/tsf-cybersec main 31f8a31f99e6dc1e86441aeafe586f2dd94972f3
+tsf_devtool /home/user/src/midair-platform/tsf-devtool main 9617f80dc25089a85a7e27d5b3e2da551adf9cb4
+tsf_kernel /home/user/src/midair-platform/tsf-kernel main 8e228b7e3df3afc79c2423b892141a0e38efb3d3
+tsf_printing /tmp/ws main 583b0dca581d0595bc00881146cb494a329ac51c
