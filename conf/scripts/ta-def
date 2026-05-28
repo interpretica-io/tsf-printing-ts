@@ -1,5 +1,5 @@
 #! /bin/bash
-# SPDX-License-Identifier: Apache-2.0
+# SPDX-License-Identifier: MIT
 # Copyright (C) 2025 Interpretica Unipessoal Lda. All rights reserved.
 #
 # Test Agents configuration - no hardware agents for localhost testing.
